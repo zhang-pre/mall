@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.5</version>
+        <version>2.1.8.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.atguigu.gulimall</groupId>
@@ -13,12 +13,19 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>gulimall</name>
     <description>gulimall聚合</description>
+
     <packaging>pom</packaging>
+
+
     <modules>
         <module>gulimall-coupon</module>
         <module>gulimall-member</module>
         <module>gulimall-order</module>
         <module>gulimall-product</module>
         <module>gulimall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>gulimall-common</module>
     </modules>
+
 </project>

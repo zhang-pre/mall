@@ -1,0 +1,22 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.221.131:3306/gulimall_oms?userUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    #数据库下划线和实体类驼峰统一
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+  #这个配置项指定了主键 ID 的生成策略，这里设置为自动增长（auto）。
+      id-type: auto
+    banner: false
+  #告诉 MyBatis-Plus 映射器（Mapper）的 XML 文件所在的位置。  默认值classpath*:/mapper/**/*.xml。
+  #  classpath表示只引用现在模块的类路径。classpath*表示不止引用现在模块的类路径，还包括依赖jar包的类路径
+  mapper-locations: classpath:/mapper/**/*.xml
