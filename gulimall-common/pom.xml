@@ -69,10 +69,15 @@
 			<artifactId>junit-jupiter-api</artifactId>
 		</dependency>
 
-
+		<!--	服务注册发现	-->
 		<dependency>
 			<groupId>com.alibaba.cloud</groupId>
 			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+		</dependency>
+		<!--  配置中心，做配置管理 -->
+		<dependency>
+			<groupId>com.alibaba.cloud</groupId>
+			<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
 		</dependency>
 	</dependencies>
 
