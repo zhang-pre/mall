@@ -22,7 +22,12 @@ mybatis-plus:
     db-config:
   #这个配置项指定了主键 ID 的生成策略，这里设置为自动增长（auto）。
       id-type: auto
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)。
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0
     banner: false
   #告诉 MyBatis-Plus 映射器（Mapper）的 XML 文件所在的位置。  默认值classpath*:/mapper/**/*.xml。
   #  classpath表示只引用现在模块的类路径。classpath*表示不止引用现在模块的类路径，还包括依赖jar包的类路径
   mapper-locations: classpath:/mapper/**/*.xml
+logging:
+  level:
+    com.atguigu.gulimall: debug

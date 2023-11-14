@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: gulimall-third-party
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#     很奇怪，alicloud放在nacos中读不出来
+#    alicloud:
+#      oss:
+#        endpoint: oss-cn-guangzhou.aliyuncs.com
+#        bucket: mall-zbb
+#      access-key: LTAI5tQ23VixnYTohDjjgTjk
+#      secret-key: FvEIPKRUxt0sZCa975io7y0A9Ak66X
+server:
+  port: 30000
